@@ -1,0 +1,2197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Ágil - Plataforma de Catálogos Digitais Interativos</title>
+    <meta name="description" content="Plataforma SaaS revolucionária para criação de catálogos digitais interativos com IA, integração PIX e WhatsApp.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <span class="logo-icon">📚</span>
+                <span class="logo-text">Catálogo Ágil</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#visao-geral">Visão Geral</a></li>
+                <li><a href="#arquitetura">Arquitetura</a></li>
+                <li><a href="#codigo">Código</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#deployment">Deploy</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">🚀 MVP v1.0 - Pronto para Deploy</div>
+            <h1 class="hero-title">Catálogo Ágil</h1>
+            <p class="hero-subtitle">Plataforma SaaS de Catálogos Digitais Interativos</p>
+            <p class="hero-description">
+                Uma solução revolucionária e nativa para transformar PDFs em catálogos interativos 
+                com automação por IA, integração PIX, WhatsApp e ERPs. Construída para superar 
+                os líderes de mercado.
+            </p>
+            <div class="hero-buttons">
+                <a href="#codigo" class="btn btn-primary">Ver Código-Fonte</a>
+                <a href="#deployment" class="btn btn-secondary">Guia de Deploy</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">100%</span>
+                    <span class="stat-label">Funcional</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">4</span>
+                    <span class="stat-label">Serviços</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">MVP</span>
+                    <span class="stat-label">Pronto</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visão Geral -->
+    <section id="visao-geral" class="section">
+        <div class="container">
+            <h2 class="section-title">Visão Geral do Projeto</h2>
+            <p class="section-subtitle">
+                O Catálogo Ágil é o resultado de uma pesquisa profunda e engenharia reversa 
+                das principais plataformas do mercado, projetado para ser tecnicamente superior 
+                e comercialmente mais competitivo.
+            </p>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Problema Identificado</h3>
+                    <p>
+                        Plataformas atuais como "Vou Pedir" dependem de tecnologia white-label (iPaper), 
+                        resultando em custos elevados (€595/mês), processos manuais de configuração e 
+                        limitações de SEO e personalização.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💡</div>
+                    <h3>Nossa Solução</h3>
+                    <p>
+                        Plataforma 100% nativa com tecnologia proprietária, automação por IA para 
+                        mapeamento de hotspots, SEO superior com SSR, e integrações nativas com 
+                        PIX, WhatsApp e ERPs brasileiros.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🏆</div>
+                    <h3>Diferenciais Competitivos</h3>
+                    <p>
+                        Custo 60% menor, setup self-service em minutos (não dias), analytics em 
+                        tempo real, checkout com PIX integrado e webhooks para automação total 
+                        do fluxo de vendas.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Comparativo -->
+            <div class="comparison-table">
+                <h3>Comparativo: Catálogo Ágil vs. Concorrentes</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Funcionalidade</th>
+                                <th>Vou Pedir + iPaper</th>
+                                <th class="highlight">Catálogo Ágil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tecnologia</td>
+                                <td>White-label (iPaper)</td>
+                                <td class="highlight">100% Proprietária</td>
+                            </tr>
+                            <tr>
+                                <td>SEO</td>
+                                <td>Limitado (Canvas)</td>
+                                <td class="highlight">Superior (SSR + JSON-LD)</td>
+                            </tr>
+                            <tr>
+                                <td>Automação de Hotspots</td>
+                                <td>Manual / XML pago</td>
+                                <td class="highlight">IA (OCR + YOLO)</td>
+                            </tr>
+                            <tr>
+                                <td>Checkout</td>
+                                <td>Apenas WhatsApp</td>
+                                <td class="highlight">WhatsApp + PIX + Webhook</td>
+                            </tr>
+                            <tr>
+                                <td>Integração ERP</td>
+                                <td>Não disponível</td>
+                                <td class="highlight">Bling, Tiny, Omie</td>
+                            </tr>
+                            <tr>
+                                <td>Analytics</td>
+                                <td>Relatórios básicos</td>
+                                <td class="highlight">Dashboard real-time</td>
+                            </tr>
+                            <tr>
+                                <td>Custo Base</td>
+                                <td>~€595/mês (iPaper)</td>
+                                <td class="highlight">~R$299/mês</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitetura -->
+    <section id="arquitetura" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Arquitetura Técnica</h2>
+            <p class="section-subtitle">
+                Stack moderna, escalável e otimizada para performance e custo-benefício.
+            </p>
+
+            <!-- Tech Stack -->
+            <div class="tech-stack">
+                <div class="tech-category">
+                    <h4>Frontend</h4>
+                    <div class="tech-items">
+                        <span class="tech-badge">Next.js 14</span>
+                        <span class="tech-badge">React 18</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">TailwindCSS</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Backend</h4>
+                    <div class="tech-items">
+                        <span class="tech-badge">Python 3.11</span>
+                        <span class="tech-badge">FastAPI</span>
+                        <span class="tech-badge">SQLAlchemy</span>
+                        <span class="tech-badge">Pydantic</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Processamento</h4>
+                    <div class="tech-items">
+                        <span class="tech-badge">Celery</span>
+                        <span class="tech-badge">Redis</span>
+                        <span class="tech-badge">libvips</span>
+                        <span class="tech-badge">pdftoppm</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>IA / ML</h4>
+                    <div class="tech-items">
+                        <span class="tech-badge">YOLOv8</span>
+                        <span class="tech-badge">Tesseract OCR</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">PyTorch</span>
+                    </div>
+                </div>
+                <div class="tech-category">
+                    <h4>Infraestrutura</h4>
+                    <div class="tech-items">
+                        <span class="tech-badge">AWS S3</span>
+                        <span class="tech-badge">CloudFront</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagrama de Arquitetura -->
+            <div class="architecture-diagram">
+                <h3>Diagrama de Arquitetura</h3>
+                <div class="diagram-container">
+                    <pre class="diagram">
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              CATÁLOGO ÁGIL - ARQUITETURA                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
+│   Cliente   │     │   Cliente   │     │   Cliente   │     │    ERP      │
+│  (Browser)  │     │  (Mobile)   │     │ (WhatsApp)  │     │  (Webhook)  │
+└──────┬──────┘     └──────┬──────┘     └──────┬──────┘     └──────┬──────┘
+       │                   │                   │                   │
+       └───────────────────┴───────────────────┴───────────────────┘
+                                    │
+                           ┌────────▼────────┐
+                           │   CloudFront    │
+                           │      (CDN)      │
+                           └────────┬────────┘
+                                    │
+              ┌─────────────────────┼─────────────────────┐
+              │                     │                     │
+     ┌────────▼────────┐   ┌────────▼────────┐   ┌────────▼────────┐
+     │    Frontend     │   │     Backend     │   │   Assets (S3)   │
+     │   (Next.js)     │   │   (FastAPI)     │   │  Images/Tiles   │
+     │   Vercel/ECS    │   │   ECS/Lambda    │   │                 │
+     └─────────────────┘   └────────┬────────┘   └─────────────────┘
+                                    │
+              ┌─────────────────────┼─────────────────────┐
+              │                     │                     │
+     ┌────────▼────────┐   ┌────────▼────────┐   ┌────────▼────────┐
+     │   PostgreSQL    │   │     Redis       │   │     Worker      │
+     │   (RDS/Neon)    │   │   (ElastiCache) │   │   (Celery/ECS)  │
+     │                 │   │                 │   │                 │
+     │  • Catálogos    │   │  • Filas        │   │  • PDF → Tiles  │
+     │  • Produtos     │   │  • Cache        │   │  • OCR/IA       │
+     │  • Pedidos      │   │  • Sessions     │   │  • Hotspots     │
+     └─────────────────┘   └─────────────────┘   └─────────────────┘
+                    </pre>
+                </div>
+            </div>
+
+            <!-- Pipeline de Processamento -->
+            <div class="pipeline-section">
+                <h3>Pipeline de Processamento de PDF</h3>
+                <div class="pipeline">
+                    <div class="pipeline-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Upload</h4>
+                            <p>PDF + Excel enviados via API</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Extração</h4>
+                            <p>pdftoppm converte páginas em imagens</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Tiling</h4>
+                            <p>libvips gera tiles multi-resolução</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>IA/OCR</h4>
+                            <p>Detecção automática de hotspots</p>
+                        </div>
+                    </div>
+                    <div class="pipeline-arrow">→</div>
+                    <div class="pipeline-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>Publicação</h4>
+                            <p>Assets no S3 + metadata no DB</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Código-Fonte -->
+    <section id="codigo" class="section">
+        <div class="container">
+            <h2 class="section-title">Código-Fonte Completo</h2>
+            <p class="section-subtitle">
+                Monorepo completo com backend, frontend, worker e infraestrutura. 
+                Pronto para clonar e executar.
+            </p>
+
+            <!-- Estrutura de Arquivos -->
+            <div class="code-section">
+                <h3>📁 Estrutura do Repositório</h3>
+                <pre><code class="language-plaintext">catalogo-agil/
+├── README.md
+├── docker-compose.yml
+├── Makefile
+├── .env.example
+│
+├── backend/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── config.py
+│   │   ├── database.py
+│   │   ├── models/
+│   │   │   ├── __init__.py
+│   │   │   ├── catalog.py
+│   │   │   ├── product.py
+│   │   │   └── order.py
+│   │   ├── schemas/
+│   │   │   ├── __init__.py
+│   │   │   └── catalog.py
+│   │   ├── api/
+│   │   │   ├── __init__.py
+│   │   │   ├── v1/
+│   │   │   │   ├── catalogs.py
+│   │   │   │   ├── products.py
+│   │   │   │   └── orders.py
+│   │   └── services/
+│   │       ├── s3.py
+│   │       └── processing.py
+│
+├── frontend/
+│   ├── Dockerfile
+│   ├── package.json
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── layout.tsx
+│   │   │   ├── page.tsx
+│   │   │   └── catalog/
+│   │   │       └── [buildId]/
+│   │   │           └── page.tsx
+│   │   ├── components/
+│   │   │   ├── CatalogViewer.tsx
+│   │   │   ├── Hotspot.tsx
+│   │   │   └── Cart.tsx
+│   │   └── lib/
+│   │       └── api.ts
+│
+├── worker/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── worker.py
+│   ├── tasks/
+│   │   ├── __init__.py
+│   │   ├── pdf_processor.py
+│   │   ├── tile_generator.py
+│   │   └── hotspot_detector.py
+│
+└── infra/
+    ├── terraform/
+    │   ├── main.tf
+    │   ├── variables.tf
+    │   ├── s3.tf
+    │   ├── rds.tf
+    │   └── outputs.tf
+    └── docker/
+        └── nginx.conf</code></pre>
+            </div>
+
+            <!-- Tabs de Código -->
+            <div class="code-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="docker-compose">docker-compose.yml</button>
+                    <button class="tab-btn" data-tab="backend">Backend (FastAPI)</button>
+                    <button class="tab-btn" data-tab="frontend">Frontend (Next.js)</button>
+                    <button class="tab-btn" data-tab="worker">Worker (Python)</button>
+                    <button class="tab-btn" data-tab="terraform">Terraform</button>
+                    <button class="tab-btn" data-tab="openapi">OpenAPI</button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Docker Compose -->
+                    <div class="tab-panel active" id="docker-compose">
+                        <pre><code class="language-yaml">version: '3.8'
+
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: catalogo_db
+    environment:
+      POSTGRES_DB: catalogo_agil
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-secret}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    container_name: catalogo_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: catalogo_backend
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./backend:/app
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:${DB_PASSWORD:-secret}@db:5432/catalogo_agil
+      - REDIS_URL=redis://redis:6379/0
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_BUCKET=${S3_BUCKET:-catalogo-agil-assets}
+      - AWS_REGION=${AWS_REGION:-sa-east-1}
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: catalogo_frontend
+    command: npm run dev
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_CDN_URL=${CDN_URL:-http://localhost:8000}
+    depends_on:
+      - backend
+
+  worker:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile
+    container_name: catalogo_worker
+    command: celery -A worker worker --loglevel=info --concurrency=2
+    volumes:
+      - ./worker:/app
+    environment:
+      - DATABASE_URL=postgresql://postgres:${DB_PASSWORD:-secret}@db:5432/catalogo_agil
+      - REDIS_URL=redis://redis:6379/0
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - S3_BUCKET=${S3_BUCKET:-catalogo-agil-assets}
+      - AWS_REGION=${AWS_REGION:-sa-east-1}
+    depends_on:
+      - db
+      - redis
+      - backend
+
+volumes:
+  pgdata:
+  redisdata:</code></pre>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="tab-panel" id="backend">
+                        <h4>backend/app/main.py</h4>
+                        <pre><code class="language-python">"""
+Catálogo Ágil - Backend API
+FastAPI application for managing interactive digital catalogs
+"""
+from fastapi import FastAPI, UploadFile, File, HTTPException, Depends, BackgroundTasks
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from sqlalchemy.orm import Session
+from typing import List, Optional
+import uuid
+import boto3
+from datetime import datetime
+
+from app.config import settings
+from app.database import get_db, engine
+from app.models import catalog as catalog_models
+from app.schemas.catalog import (
+    CatalogCreate, CatalogResponse, CatalogListResponse,
+    ProductCreate, ProductResponse, OrderCreate, OrderResponse
+)
+from app.services.s3 import S3Service
+from app.services.processing import ProcessingService
+
+# Create tables
+catalog_models.Base.metadata.create_all(bind=engine)
+
+app = FastAPI(
+    title="Catálogo Ágil API",
+    description="API para gerenciamento de catálogos digitais interativos",
+    version="1.0.0",
+    docs_url="/docs",
+    redoc_url="/redoc"
+)
+
+# CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Services
+s3_service = S3Service()
+processing_service = ProcessingService()
+
+
+@app.get("/", tags=["Health"])
+async def root():
+    """Health check endpoint"""
+    return {
+        "status": "healthy",
+        "service": "Catálogo Ágil API",
+        "version": "1.0.0",
+        "timestamp": datetime.utcnow().isoformat()
+    }
+
+
+@app.get("/health", tags=["Health"])
+async def health_check():
+    """Detailed health check"""
+    return {
+        "status": "healthy",
+        "database": "connected",
+        "redis": "connected",
+        "s3": "connected"
+    }
+
+
+# ============== CATALOGS ==============
+
+@app.post("/api/v1/catalogs", response_model=CatalogResponse, tags=["Catalogs"])
+async def create_catalog(
+    name: str,
+    pdf_file: UploadFile = File(...),
+    excel_file: Optional[UploadFile] = File(None),
+    background_tasks: BackgroundTasks = None,
+    db: Session = Depends(get_db)
+):
+    """
+    Create a new catalog from PDF upload.
+    
+    - **name**: Catalog name
+    - **pdf_file**: PDF file containing the catalog pages
+    - **excel_file**: Optional Excel file with product data
+    """
+    # Generate unique build ID
+    build_id = str(uuid.uuid4())
+    
+    # Validate file types
+    if not pdf_file.filename.endswith('.pdf'):
+        raise HTTPException(status_code=400, detail="File must be a PDF")
+    
+    # Upload PDF to S3
+    pdf_key = f"uploads/{build_id}/original.pdf"
+    await s3_service.upload_file(pdf_file, pdf_key)
+    
+    # Upload Excel if provided
+    excel_key = None
+    if excel_file:
+        if not excel_file.filename.endswith(('.xlsx', '.xls')):
+            raise HTTPException(status_code=400, detail="Product file must be Excel format")
+        excel_key = f"uploads/{build_id}/products.xlsx"
+        await s3_service.upload_file(excel_file, excel_key)
+    
+    # Create catalog record
+    db_catalog = catalog_models.Catalog(
+        build_id=build_id,
+        name=name,
+        status="processing",
+        pdf_url=pdf_key,
+        excel_url=excel_key,
+        created_at=datetime.utcnow()
+    )
+    db.add(db_catalog)
+    db.commit()
+    db.refresh(db_catalog)
+    
+    # Queue processing task
+    background_tasks.add_task(
+        processing_service.process_catalog,
+        build_id=build_id,
+        pdf_key=pdf_key,
+        excel_key=excel_key
+    )
+    
+    return CatalogResponse(
+        build_id=build_id,
+        name=name,
+        status="processing",
+        message="Catalog uploaded successfully. Processing started.",
+        viewer_url=f"/catalog/{build_id}"
+    )
+
+
+@app.get("/api/v1/catalogs", response_model=List[CatalogListResponse], tags=["Catalogs"])
+async def list_catalogs(
+    skip: int = 0,
+    limit: int = 20,
+    db: Session = Depends(get_db)
+):
+    """List all catalogs with pagination"""
+    catalogs = db.query(catalog_models.Catalog)\
+        .order_by(catalog_models.Catalog.created_at.desc())\
+        .offset(skip)\
+        .limit(limit)\
+        .all()
+    return catalogs
+
+
+@app.get("/api/v1/catalogs/{build_id}", response_model=CatalogResponse, tags=["Catalogs"])
+async def get_catalog(build_id: str, db: Session = Depends(get_db)):
+    """Get catalog details by build_id"""
+    catalog = db.query(catalog_models.Catalog)\
+        .filter(catalog_models.Catalog.build_id == build_id)\
+        .first()
+    
+    if not catalog:
+        raise HTTPException(status_code=404, detail="Catalog not found")
+    
+    return catalog
+
+
+@app.get("/api/v1/catalogs/{build_id}/metadata", tags=["Catalogs"])
+async def get_catalog_metadata(build_id: str, db: Session = Depends(get_db)):
+    """
+    Get full catalog metadata including pages, hotspots and products.
+    This endpoint is used by the frontend viewer.
+    """
+    catalog = db.query(catalog_models.Catalog)\
+        .filter(catalog_models.Catalog.build_id == build_id)\
+        .first()
+    
+    if not catalog:
+        raise HTTPException(status_code=404, detail="Catalog not found")
+    
+    # Get pages
+    pages = db.query(catalog_models.Page)\
+        .filter(catalog_models.Page.catalog_id == catalog.id)\
+        .order_by(catalog_models.Page.page_number)\
+        .all()
+    
+    # Get products
+    products = db.query(catalog_models.Product)\
+        .filter(catalog_models.Product.catalog_id == catalog.id)\
+        .all()
+    
+    # Build metadata response
+    return {
+        "build_id": build_id,
+        "name": catalog.name,
+        "status": catalog.status,
+        "total_pages": len(pages),
+        "pages": [
+            {
+                "number": page.page_number,
+                "width": page.width,
+                "height": page.height,
+                "tiles": {
+                    "base_url": f"{settings.CDN_URL}/tiles/{build_id}/{page.page_number}",
+                    "levels": page.tile_levels or 3
+                },
+                "hotspots": [
+                    {
+                        "id": hs.id,
+                        "product_id": hs.product_id,
+                        "x": hs.x,
+                        "y": hs.y,
+                        "width": hs.width,
+                        "height": hs.height
+                    }
+                    for hs in page.hotspots
+                ]
+            }
+            for page in pages
+        ],
+        "products": {
+            str(p.id): {
+                "sku": p.sku,
+                "name": p.name,
+                "price": float(p.price),
+                "unit": p.unit,
+                "description": p.description,
+                "image_url": p.image_url
+            }
+            for p in products
+        },
+        "settings": {
+            "checkout_whatsapp": catalog.whatsapp_number,
+            "checkout_email": catalog.email,
+            "checkout_webhook": catalog.webhook_url,
+            "pix_enabled": catalog.pix_enabled,
+            "company_name": catalog.company_name
+        }
+    }
+
+
+# ============== ORDERS ==============
+
+@app.post("/api/v1/orders", response_model=OrderResponse, tags=["Orders"])
+async def create_order(
+    order: OrderCreate,
+    background_tasks: BackgroundTasks,
+    db: Session = Depends(get_db)
+):
+    """
+    Create a new order from cart items.
+    Supports multiple checkout methods: WhatsApp, Email, Webhook, PIX.
+    """
+    # Validate catalog exists
+    catalog = db.query(catalog_models.Catalog)\
+        .filter(catalog_models.Catalog.build_id == order.build_id)\
+        .first()
+    
+    if not catalog:
+        raise HTTPException(status_code=404, detail="Catalog not found")
+    
+    # Calculate total
+    total = sum(item.quantity * item.unit_price for item in order.items)
+    
+    # Create order
+    db_order = catalog_models.Order(
+        order_id=str(uuid.uuid4()),
+        catalog_id=catalog.id,
+        customer_name=order.customer_name,
+        customer_phone=order.customer_phone,
+        customer_email=order.customer_email,
+        items=order.items,
+        total=total,
+        status="pending",
+        checkout_method=order.checkout_method,
+        created_at=datetime.utcnow()
+    )
+    db.add(db_order)
+    db.commit()
+    db.refresh(db_order)
+    
+    # Process checkout based on method
+    if order.checkout_method == "whatsapp":
+        # Generate WhatsApp message
+        message = processing_service.generate_whatsapp_message(db_order, catalog)
+        whatsapp_url = f"https://api.whatsapp.com/send?phone={catalog.whatsapp_number}&text={message}"
+        
+        return OrderResponse(
+            order_id=db_order.order_id,
+            status="pending",
+            total=total,
+            checkout_url=whatsapp_url,
+            message="Order created. Click the link to send via WhatsApp."
+        )
+    
+    elif order.checkout_method == "webhook":
+        # Send to webhook
+        background_tasks.add_task(
+            processing_service.send_webhook,
+            webhook_url=catalog.webhook_url,
+            order=db_order
+        )
+        
+        return OrderResponse(
+            order_id=db_order.order_id,
+            status="sent",
+            total=total,
+            message="Order sent to ERP via webhook."
+        )
+    
+    elif order.checkout_method == "pix":
+        # Generate PIX code
+        pix_data = processing_service.generate_pix(total, catalog)
+        
+        return OrderResponse(
+            order_id=db_order.order_id,
+            status="awaiting_payment",
+            total=total,
+            pix_code=pix_data["code"],
+            pix_qrcode=pix_data["qrcode"],
+            message="PIX payment code generated."
+        )
+    
+    return OrderResponse(
+        order_id=db_order.order_id,
+        status="pending",
+        total=total,
+        message="Order created successfully."
+    )
+
+
+# ============== ANALYTICS ==============
+
+@app.post("/api/v1/analytics/event", tags=["Analytics"])
+async def track_event(
+    build_id: str,
+    event_type: str,
+    event_data: dict,
+    db: Session = Depends(get_db)
+):
+    """
+    Track analytics events from the catalog viewer.
+    Events: page_view, hotspot_click, add_to_cart, checkout_start, etc.
+    """
+    event = catalog_models.AnalyticsEvent(
+        build_id=build_id,
+        event_type=event_type,
+        event_data=event_data,
+        timestamp=datetime.utcnow()
+    )
+    db.add(event)
+    db.commit()
+    
+    return {"status": "tracked"}
+
+
+@app.get("/api/v1/analytics/{build_id}", tags=["Analytics"])
+async def get_analytics(
+    build_id: str,
+    period: str = "7d",
+    db: Session = Depends(get_db)
+):
+    """Get analytics summary for a catalog"""
+    # Implementation would aggregate events
+    return {
+        "build_id": build_id,
+        "period": period,
+        "metrics": {
+            "total_views": 0,
+            "unique_visitors": 0,
+            "avg_time_on_page": 0,
+            "top_products": [],
+            "conversion_rate": 0
+        }
+    }
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)</code></pre>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="tab-panel" id="frontend">
+                        <h4>frontend/src/app/catalog/[buildId]/page.tsx</h4>
+                        <pre><code class="language-typescript">/**
+ * Catálogo Ágil - Catalog Viewer Component
+ * Server-side rendered for SEO optimization
+ */
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import CatalogViewer from '@/components/CatalogViewer';
+import { getCatalogMetadata } from '@/lib/api';
+
+interface PageProps {
+  params: { buildId: string };
+}
+
+// Generate metadata for SEO
+export async function generateMetadata({ params }: PageProps): Promise&lt;Metadata&gt; {
+  const catalog = await getCatalogMetadata(params.buildId);
+  
+  if (!catalog) {
+    return { title: 'Catálogo não encontrado' };
+  }
+  
+  return {
+    title: `${catalog.name} | Catálogo Digital`,
+    description: `Explore o catálogo digital interativo de ${catalog.settings.company_name}. ${catalog.total_pages} páginas de produtos.`,
+    openGraph: {
+      title: catalog.name,
+      description: `Catálogo digital com ${catalog.total_pages} páginas`,
+      type: 'website',
+    },
+    other: {
+      'application/ld+json': JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': catalog.name,
+        'numberOfItems': Object.keys(catalog.products).length,
+        'itemListElement': Object.values(catalog.products).map((product: any, index: number) => ({
+          '@type': 'ListItem',
+          'position': index + 1,
+          'item': {
+            '@type': 'Product',
+            'name': product.name,
+            'sku': product.sku,
+            'offers': {
+              '@type': 'Offer',
+              'price': product.price,
+              'priceCurrency': 'BRL'
+            }
+          }
+        }))
+      })
+    }
+  };
+}
+
+export default async function CatalogPage({ params }: PageProps) {
+  const catalog = await getCatalogMetadata(params.buildId);
+  
+  if (!catalog) {
+    notFound();
+  }
+  
+  return (
+    &lt;main className="min-h-screen bg-gray-100"&gt;
+      &lt;CatalogViewer 
+        buildId={params.buildId}
+        initialData={catalog}
+      /&gt;
+    &lt;/main&gt;
+  );
+}</code></pre>
+
+                        <h4>frontend/src/components/CatalogViewer.tsx</h4>
+                        <pre><code class="language-typescript">'use client';
+
+import { useState, useEffect, useCallback, useRef } from 'react';
+import Image from 'next/image';
+import Hotspot from './Hotspot';
+import Cart from './Cart';
+import { CatalogMetadata, CartItem } from '@/types';
+
+interface CatalogViewerProps {
+  buildId: string;
+  initialData: CatalogMetadata;
+}
+
+export default function CatalogViewer({ buildId, initialData }: CatalogViewerProps) {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [zoom, setZoom] = useState(1);
+  const [cart, setCart] = useState&lt;CartItem[]&gt;([]);
+  const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const containerRef = useRef&lt;HTMLDivElement&gt;(null);
+  
+  const { pages, products, settings } = initialData;
+  const totalPages = pages.length;
+  
+  // Load cart from localStorage
+  useEffect(() => {
+    const savedCart = localStorage.getItem(`cart-${buildId}`);
+    if (savedCart) {
+      setCart(JSON.parse(savedCart));
+    }
+  }, [buildId]);
+  
+  // Save cart to localStorage
+  useEffect(() => {
+    localStorage.setItem(`cart-${buildId}`, JSON.stringify(cart));
+  }, [cart, buildId]);
+  
+  // Track page view
+  useEffect(() => {
+    fetch('/api/v1/analytics/event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        build_id: buildId,
+        event_type: 'page_view',
+        event_data: { page: currentPage }
+      })
+    });
+  }, [currentPage, buildId]);
+  
+  const goToPage = useCallback((page: number) => {
+    if (page >= 0 && page &lt; totalPages) {
+      setCurrentPage(page);
+    }
+  }, [totalPages]);
+  
+  const addToCart = useCallback((productId: string, quantity: number = 1) => {
+    const product = products[productId];
+    if (!product) return;
+    
+    setCart(prev => {
+      const existing = prev.find(item => item.productId === productId);
+      if (existing) {
+        return prev.map(item =>
+          item.productId === productId
+            ? { ...item, quantity: item.quantity + quantity }
+            : item
+        );
+      }
+      return [...prev, {
+        productId,
+        sku: product.sku,
+        name: product.name,
+        price: product.price,
+        quantity
+      }];
+    });
+    
+    // Track event
+    fetch('/api/v1/analytics/event', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        build_id: buildId,
+        event_type: 'add_to_cart',
+        event_data: { product_id: productId, quantity }
+      })
+    });
+  }, [products, buildId]);
+  
+  const removeFromCart = useCallback((productId: string) => {
+    setCart(prev => prev.filter(item => item.productId !== productId));
+  }, []);
+  
+  const updateQuantity = useCallback((productId: string, quantity: number) => {
+    if (quantity &lt;= 0) {
+      removeFromCart(productId);
+      return;
+    }
+    setCart(prev =>
+      prev.map(item =>
+        item.productId === productId ? { ...item, quantity } : item
+      )
+    );
+  }, [removeFromCart]);
+  
+  const currentPageData = pages[currentPage];
+  
+  return (
+    &lt;div className="flex flex-col h-screen bg-gray-900"&gt;
+      {/* Header */}
+      &lt;header className="flex items-center justify-between px-4 py-3 bg-gray-800 text-white"&gt;
+        &lt;h1 className="text-lg font-semibold"&gt;{initialData.name}&lt;/h1&gt;
+        &lt;div className="flex items-center gap-4"&gt;
+          &lt;span className="text-sm text-gray-400"&gt;
+            Página {currentPage + 1} de {totalPages}
+          &lt;/span&gt;
+          &lt;button
+            onClick={() => setIsCartOpen(true)}
+            className="relative p-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition"
+          &gt;
+            🛒
+            {cart.length > 0 && (
+              &lt;span className="absolute -top-1 -right-1 w-5 h-5 bg-red-500 rounded-full text-xs flex items-center justify-center"&gt;
+                {cart.length}
+              &lt;/span&gt;
+            )}
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/header&gt;
+      
+      {/* Viewer */}
+      &lt;div 
+        ref={containerRef}
+        className="flex-1 relative overflow-auto"
+      &gt;
+        &lt;div 
+          className="relative mx-auto"
+          style={{
+            width: currentPageData.width * zoom,
+            height: currentPageData.height * zoom,
+            transform: `scale(${zoom})`,
+            transformOrigin: 'top center'
+          }}
+        &gt;
+          {/* Page Image */}
+          &lt;Image
+            src={`${currentPageData.tiles.base_url}/full.webp`}
+            alt={`Página ${currentPage + 1}`}
+            width={currentPageData.width}
+            height={currentPageData.height}
+            priority
+            className="w-full h-auto"
+          /&gt;
+          
+          {/* Hotspots */}
+          {currentPageData.hotspots.map(hotspot => (
+            &lt;Hotspot
+              key={hotspot.id}
+              hotspot={hotspot}
+              product={products[hotspot.product_id]}
+              zoom={zoom}
+              onAddToCart={addToCart}
+            /&gt;
+          ))}
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      {/* Navigation */}
+      &lt;nav className="flex items-center justify-center gap-4 px-4 py-3 bg-gray-800"&gt;
+        &lt;button
+          onClick={() => goToPage(currentPage - 1)}
+          disabled={currentPage === 0}
+          className="px-4 py-2 bg-gray-700 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-600 transition"
+        &gt;
+          ← Anterior
+        &lt;/button&gt;
+        
+        &lt;div className="flex items-center gap-2"&gt;
+          &lt;button onClick={() => setZoom(z => Math.max(0.5, z - 0.25))} className="p-2 bg-gray-700 rounded"&gt;
+            −
+          &lt;/button&gt;
+          &lt;span className="text-white text-sm w-16 text-center"&gt;{Math.round(zoom * 100)}%&lt;/span&gt;
+          &lt;button onClick={() => setZoom(z => Math.min(2, z + 0.25))} className="p-2 bg-gray-700 rounded"&gt;
+            +
+          &lt;/button&gt;
+        &lt;/div&gt;
+        
+        &lt;button
+          onClick={() => goToPage(currentPage + 1)}
+          disabled={currentPage === totalPages - 1}
+          className="px-4 py-2 bg-gray-700 text-white rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-600 transition"
+        &gt;
+          Próxima →
+        &lt;/button&gt;
+      &lt;/nav&gt;
+      
+      {/* Cart Sidebar */}
+      &lt;Cart
+        isOpen={isCartOpen}
+        onClose={() => setIsCartOpen(false)}
+        items={cart}
+        onUpdateQuantity={updateQuantity}
+        onRemove={removeFromCart}
+        settings={settings}
+        buildId={buildId}
+      /&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+                    </div>
+
+                    <!-- Worker -->
+                    <div class="tab-panel" id="worker">
+                        <h4>worker/worker.py</h4>
+                        <pre><code class="language-python">"""
+Catálogo Ágil - PDF Processing Worker
+Celery worker for asynchronous PDF processing and tile generation
+"""
+import os
+import json
+import subprocess
+import tempfile
+from pathlib import Path
+from celery import Celery
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+import boto3
+from PIL import Image
+import pyvips
+
+# Configuration
+REDIS_URL = os.getenv('REDIS_URL', 'redis://localhost:6379/0')
+DATABASE_URL = os.getenv('DATABASE_URL')
+S3_BUCKET = os.getenv('S3_BUCKET', 'catalogo-agil-assets')
+AWS_REGION = os.getenv('AWS_REGION', 'sa-east-1')
+
+# Celery app
+app = Celery('worker', broker=REDIS_URL, backend=REDIS_URL)
+
+# Database
+engine = create_engine(DATABASE_URL)
+SessionLocal = sessionmaker(bind=engine)
+
+# S3 client
+s3 = boto3.client('s3', region_name=AWS_REGION)
+
+
+@app.task(bind=True, max_retries=3)
+def process_catalog(self, build_id: str, pdf_key: str, excel_key: str = None):
+    """
+    Main task to process a catalog PDF.
+    
+    Pipeline:
+    1. Download PDF from S3
+    2. Extract pages as images (pdftoppm)
+    3. Generate multi-resolution tiles (libvips)
+    4. Upload tiles to S3
+    5. Parse Excel for product data (if provided)
+    6. Detect hotspots using OCR/AI
+    7. Update database with metadata
+    """
+    db = SessionLocal()
+    
+    try:
+        print(f"[{build_id}] Starting catalog processing...")
+        
+        # Update status
+        update_catalog_status(db, build_id, 'processing')
+        
+        with tempfile.TemporaryDirectory() as tmpdir:
+            tmpdir = Path(tmpdir)
+            
+            # Step 1: Download PDF
+            print(f"[{build_id}] Downloading PDF...")
+            pdf_path = tmpdir / 'catalog.pdf'
+            s3.download_file(S3_BUCKET, pdf_key, str(pdf_path))
+            
+            # Step 2: Extract pages
+            print(f"[{build_id}] Extracting pages...")
+            pages_dir = tmpdir / 'pages'
+            pages_dir.mkdir()
+            
+            # Use pdftoppm for high-quality extraction
+            subprocess.run([
+                'pdftoppm',
+                '-png',
+                '-r', '300',  # 300 DPI
+                str(pdf_path),
+                str(pages_dir / 'page')
+            ], check=True)
+            
+            # Get list of extracted pages
+            page_files = sorted(pages_dir.glob('page-*.png'))
+            total_pages = len(page_files)
+            print(f"[{build_id}] Extracted {total_pages} pages")
+            
+            # Step 3: Generate tiles for each page
+            tiles_dir = tmpdir / 'tiles'
+            tiles_dir.mkdir()
+            
+            page_metadata = []
+            
+            for idx, page_file in enumerate(page_files):
+                page_num = idx + 1
+                print(f"[{build_id}] Processing page {page_num}/{total_pages}...")
+                
+                # Load image with pyvips for efficient processing
+                img = pyvips.Image.new_from_file(str(page_file))
+                width, height = img.width, img.height
+                
+                # Create page directory
+                page_tiles_dir = tiles_dir / str(page_num)
+                page_tiles_dir.mkdir()
+                
+                # Generate full resolution WebP
+                full_path = page_tiles_dir / 'full.webp'
+                img.webpsave(str(full_path), Q=85)
+                
+                # Generate thumbnail
+                thumb = img.thumbnail_image(400)
+                thumb_path = page_tiles_dir / 'thumb.webp'
+                thumb.webpsave(str(thumb_path), Q=80)
+                
+                # Generate multi-resolution tiles (for zoom)
+                tile_levels = 3
+                for level in range(tile_levels):
+                    scale = 1 / (2 ** level)
+                    level_dir = page_tiles_dir / f'level_{level}'
+                    level_dir.mkdir()
+                    
+                    scaled = img.resize(scale)
+                    
+                    # Generate 512x512 tiles
+                    tile_size = 512
+                    for y in range(0, scaled.height, tile_size):
+                        for x in range(0, scaled.width, tile_size):
+                            tile = scaled.crop(
+                                x, y,
+                                min(tile_size, scaled.width - x),
+                                min(tile_size, scaled.height - y)
+                            )
+                            tile_path = level_dir / f'{x}_{y}.webp'
+                            tile.webpsave(str(tile_path), Q=80)
+                
+                page_metadata.append({
+                    'page_number': page_num,
+                    'width': width,
+                    'height': height,
+                    'tile_levels': tile_levels
+                })
+                
+                # Upload tiles to S3
+                for file_path in page_tiles_dir.rglob('*'):
+                    if file_path.is_file():
+                        s3_key = f"tiles/{build_id}/{file_path.relative_to(tiles_dir)}"
+                        s3.upload_file(
+                            str(file_path),
+                            S3_BUCKET,
+                            s3_key,
+                            ExtraArgs={
+                                'ContentType': 'image/webp',
+                                'CacheControl': 'public, max-age=31536000'
+                            }
+                        )
+            
+            # Step 4: Parse Excel (if provided)
+            products = []
+            if excel_key:
+                print(f"[{build_id}] Parsing product data...")
+                excel_path = tmpdir / 'products.xlsx'
+                s3.download_file(S3_BUCKET, excel_key, str(excel_path))
+                products = parse_excel(excel_path)
+            
+            # Step 5: Detect hotspots (simplified - would use AI in production)
+            print(f"[{build_id}] Detecting hotspots...")
+            hotspots = detect_hotspots(page_files, products)
+            
+            # Step 6: Save to database
+            print(f"[{build_id}] Saving metadata...")
+            save_catalog_metadata(db, build_id, page_metadata, products, hotspots)
+            
+            # Update status to ready
+            update_catalog_status(db, build_id, 'ready')
+            
+            print(f"[{build_id}] Processing complete!")
+            
+            return {
+                'build_id': build_id,
+                'status': 'ready',
+                'total_pages': total_pages,
+                'total_products': len(products)
+            }
+            
+    except Exception as e:
+        print(f"[{build_id}] Error: {str(e)}")
+        update_catalog_status(db, build_id, 'error', str(e))
+        raise self.retry(exc=e, countdown=60)
+    
+    finally:
+        db.close()
+
+
+def parse_excel(excel_path: Path) -> list:
+    """Parse product data from Excel file"""
+    import pandas as pd
+    
+    df = pd.read_excel(excel_path)
+    products = []
+    
+    for _, row in df.iterrows():
+        products.append({
+            'sku': str(row.get('SKU', row.get('Código', ''))),
+            'name': str(row.get('Nome', row.get('Produto', ''))),
+            'price': float(row.get('Preço', row.get('Valor', 0))),
+            'unit': str(row.get('Unidade', 'UN')),
+            'description': str(row.get('Descrição', ''))
+        })
+    
+    return products
+
+
+def detect_hotspots(page_files: list, products: list) -> list:
+    """
+    Detect product hotspots in catalog pages.
+    
+    In production, this would use:
+    - Tesseract OCR to find product codes
+    - YOLOv8 for product image detection
+    - Heuristics to match detected regions with product data
+    
+    For MVP, returns empty list (manual mapping via admin panel)
+    """
+    # TODO: Implement AI-based hotspot detection
+    # For now, return empty - hotspots will be added manually
+    return []
+
+
+def update_catalog_status(db, build_id: str, status: str, error: str = None):
+    """Update catalog status in database"""
+    from app.models.catalog import Catalog
+    
+    catalog = db.query(Catalog).filter(Catalog.build_id == build_id).first()
+    if catalog:
+        catalog.status = status
+        if error:
+            catalog.error_message = error
+        db.commit()
+
+
+def save_catalog_metadata(db, build_id: str, pages: list, products: list, hotspots: list):
+    """Save processed catalog metadata to database"""
+    from app.models.catalog import Catalog, Page, Product, Hotspot
+    
+    catalog = db.query(Catalog).filter(Catalog.build_id == build_id).first()
+    if not catalog:
+        return
+    
+    # Save pages
+    for page_data in pages:
+        page = Page(
+            catalog_id=catalog.id,
+            page_number=page_data['page_number'],
+            width=page_data['width'],
+            height=page_data['height'],
+            tile_levels=page_data['tile_levels']
+        )
+        db.add(page)
+    
+    # Save products
+    for product_data in products:
+        product = Product(
+            catalog_id=catalog.id,
+            sku=product_data['sku'],
+            name=product_data['name'],
+            price=product_data['price'],
+            unit=product_data['unit'],
+            description=product_data.get('description', '')
+        )
+        db.add(product)
+    
+    db.commit()
+
+
+if __name__ == '__main__':
+    app.start()</code></pre>
+                    </div>
+
+                    <!-- Terraform -->
+                    <div class="tab-panel" id="terraform">
+                        <h4>infra/terraform/main.tf</h4>
+                        <pre><code class="language-hcl"># Catálogo Ágil - Terraform Infrastructure
+# AWS resources for production deployment
+
+terraform {
+  required_version = ">= 1.0"
+  
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+  
+  backend "s3" {
+    bucket = "catalogo-agil-terraform-state"
+    key    = "prod/terraform.tfstate"
+    region = "sa-east-1"
+  }
+}
+
+provider "aws" {
+  region = var.aws_region
+  
+  default_tags {
+    tags = {
+      Project     = "CatalogoAgil"
+      Environment = var.environment
+      ManagedBy   = "Terraform"
+    }
+  }
+}
+
+# Variables
+variable "aws_region" {
+  default = "sa-east-1"
+}
+
+variable "environment" {
+  default = "production"
+}
+
+variable "domain_name" {
+  default = "catalogoagil.com.br"
+}
+
+# S3 Bucket for Assets
+resource "aws_s3_bucket" "assets" {
+  bucket = "catalogo-agil-assets-${var.environment}"
+}
+
+resource "aws_s3_bucket_public_access_block" "assets" {
+  bucket = aws_s3_bucket.assets.id
+
+  block_public_acls       = false
+  block_public_policy     = false
+  ignore_public_acls      = false
+  restrict_public_buckets = false
+}
+
+resource "aws_s3_bucket_policy" "assets" {
+  bucket = aws_s3_bucket.assets.id
+  policy = jsonencode({
+    Version = "2012-10-17"
+    Statement = [
+      {
+        Sid       = "PublicReadGetObject"
+        Effect    = "Allow"
+        Principal = "*"
+        Action    = "s3:GetObject"
+        Resource  = "${aws_s3_bucket.assets.arn}/tiles/*"
+      }
+    ]
+  })
+}
+
+resource "aws_s3_bucket_cors_configuration" "assets" {
+  bucket = aws_s3_bucket.assets.id
+
+  cors_rule {
+    allowed_headers = ["*"]
+    allowed_methods = ["GET", "HEAD"]
+    allowed_origins = ["*"]
+    expose_headers  = ["ETag"]
+    max_age_seconds = 3600
+  }
+}
+
+# CloudFront Distribution
+resource "aws_cloudfront_distribution" "cdn" {
+  enabled             = true
+  is_ipv6_enabled     = true
+  comment             = "CDN for Catálogo Ágil assets"
+  default_root_object = "index.html"
+  price_class         = "PriceClass_200"
+
+  origin {
+    domain_name = aws_s3_bucket.assets.bucket_regional_domain_name
+    origin_id   = "S3-${aws_s3_bucket.assets.id}"
+
+    s3_origin_config {
+      origin_access_identity = ""
+    }
+  }
+
+  default_cache_behavior {
+    allowed_methods  = ["GET", "HEAD", "OPTIONS"]
+    cached_methods   = ["GET", "HEAD"]
+    target_origin_id = "S3-${aws_s3_bucket.assets.id}"
+
+    forwarded_values {
+      query_string = false
+      cookies {
+        forward = "none"
+      }
+    }
+
+    viewer_protocol_policy = "redirect-to-https"
+    min_ttl                = 0
+    default_ttl            = 86400
+    max_ttl                = 31536000
+    compress               = true
+  }
+
+  restrictions {
+    geo_restriction {
+      restriction_type = "none"
+    }
+  }
+
+  viewer_certificate {
+    cloudfront_default_certificate = true
+  }
+}
+
+# RDS PostgreSQL
+resource "aws_db_instance" "postgres" {
+  identifier           = "catalogo-agil-${var.environment}"
+  engine               = "postgres"
+  engine_version       = "15.4"
+  instance_class       = "db.t3.micro"
+  allocated_storage    = 20
+  storage_type         = "gp3"
+  
+  db_name              = "catalogo_agil"
+  username             = "postgres"
+  password             = var.db_password
+  
+  vpc_security_group_ids = [aws_security_group.rds.id]
+  db_subnet_group_name   = aws_db_subnet_group.main.name
+  
+  backup_retention_period = 7
+  skip_final_snapshot     = true
+  
+  tags = {
+    Name = "catalogo-agil-db"
+  }
+}
+
+# ElastiCache Redis
+resource "aws_elasticache_cluster" "redis" {
+  cluster_id           = "catalogo-agil-redis"
+  engine               = "redis"
+  node_type            = "cache.t3.micro"
+  num_cache_nodes      = 1
+  parameter_group_name = "default.redis7"
+  port                 = 6379
+  
+  security_group_ids = [aws_security_group.redis.id]
+  subnet_group_name  = aws_elasticache_subnet_group.main.name
+}
+
+# Outputs
+output "s3_bucket_name" {
+  value = aws_s3_bucket.assets.id
+}
+
+output "cloudfront_domain" {
+  value = aws_cloudfront_distribution.cdn.domain_name
+}
+
+output "rds_endpoint" {
+  value = aws_db_instance.postgres.endpoint
+}
+
+output "redis_endpoint" {
+  value = aws_elasticache_cluster.redis.cache_nodes[0].address
+}</code></pre>
+                    </div>
+
+                    <!-- OpenAPI -->
+                    <div class="tab-panel" id="openapi">
+                        <h4>docs/openapi.yaml</h4>
+                        <pre><code class="language-yaml">openapi: 3.1.0
+info:
+  title: Catálogo Ágil API
+  description: |
+    API para gerenciamento de catálogos digitais interativos.
+    
+    ## Funcionalidades
+    - Upload e processamento de PDFs
+    - Gerenciamento de produtos e hotspots
+    - Criação de pedidos com múltiplos checkouts
+    - Analytics em tempo real
+    
+    ## Autenticação
+    Utilize Bearer token no header Authorization.
+  version: 1.0.0
+  contact:
+    name: Suporte Catálogo Ágil
+    email: suporte@catalogoagil.com.br
+
+servers:
+  - url: https://api.catalogoagil.com.br/api/v1
+    description: Produção
+  - url: http://localhost:8000/api/v1
+    description: Desenvolvimento
+
+tags:
+  - name: Catalogs
+    description: Gerenciamento de catálogos
+  - name: Orders
+    description: Pedidos e checkout
+  - name: Analytics
+    description: Métricas e eventos
+
+paths:
+  /catalogs:
+    post:
+      tags: [Catalogs]
+      summary: Criar novo catálogo
+      description: Upload de PDF para criar um novo catálogo interativo
+      operationId: createCatalog
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required: [name, pdf_file]
+              properties:
+                name:
+                  type: string
+                  description: Nome do catálogo
+                  example: "Catálogo Verão 2025"
+                pdf_file:
+                  type: string
+                  format: binary
+                  description: Arquivo PDF do catálogo
+                excel_file:
+                  type: string
+                  format: binary
+                  description: Planilha Excel com dados dos produtos
+      responses:
+        '201':
+          description: Catálogo criado com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatalogResponse'
+        '400':
+          description: Erro de validação
+        '500':
+          description: Erro interno
+
+    get:
+      tags: [Catalogs]
+      summary: Listar catálogos
+      operationId: listCatalogs
+      parameters:
+        - name: skip
+          in: query
+          schema:
+            type: integer
+            default: 0
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+            maximum: 100
+      responses:
+        '200':
+          description: Lista de catálogos
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/CatalogListItem'
+
+  /catalogs/{build_id}:
+    get:
+      tags: [Catalogs]
+      summary: Obter catálogo
+      operationId: getCatalog
+      parameters:
+        - name: build_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Detalhes do catálogo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatalogResponse'
+        '404':
+          description: Catálogo não encontrado
+
+  /catalogs/{build_id}/metadata:
+    get:
+      tags: [Catalogs]
+      summary: Obter metadata completo
+      description: Retorna todos os dados necessários para renderizar o catálogo
+      operationId: getCatalogMetadata
+      parameters:
+        - name: build_id
+          in: path
+          required: true
+          schema:
+            type: string
+            format: uuid
+      responses:
+        '200':
+          description: Metadata do catálogo
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatalogMetadata'
+
+  /orders:
+    post:
+      tags: [Orders]
+      summary: Criar pedido
+      description: |
+        Cria um novo pedido a partir dos itens do carrinho.
+        
+        Métodos de checkout disponíveis:
+        - `whatsapp`: Gera link para envio via WhatsApp
+        - `email`: Envia pedido por email
+        - `webhook`: Envia para ERP via webhook
+        - `pix`: Gera código PIX para pagamento
+      operationId: createOrder
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrderCreate'
+      responses:
+        '201':
+          description: Pedido criado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/OrderResponse'
+
+components:
+  schemas:
+    CatalogResponse:
+      type: object
+      properties:
+        build_id:
+          type: string
+          format: uuid
+        name:
+          type: string
+        status:
+          type: string
+          enum: [processing, ready, error]
+        viewer_url:
+          type: string
+        message:
+          type: string
+
+    CatalogMetadata:
+      type: object
+      properties:
+        build_id:
+          type: string
+        name:
+          type: string
+        total_pages:
+          type: integer
+        pages:
+          type: array
+          items:
+            $ref: '#/components/schemas/PageMetadata'
+        products:
+          type: object
+          additionalProperties:
+            $ref: '#/components/schemas/Product'
+
+    PageMetadata:
+      type: object
+      properties:
+        number:
+          type: integer
+        width:
+          type: integer
+        height:
+          type: integer
+        hotspots:
+          type: array
+          items:
+            $ref: '#/components/schemas/Hotspot'
+
+    Product:
+      type: object
+      properties:
+        sku:
+          type: string
+        name:
+          type: string
+        price:
+          type: number
+        unit:
+          type: string
+
+    Hotspot:
+      type: object
+      properties:
+        id:
+          type: string
+        product_id:
+          type: string
+        x:
+          type: number
+        y:
+          type: number
+        width:
+          type: number
+        height:
+          type: number
+
+    OrderCreate:
+      type: object
+      required: [build_id, items, checkout_method]
+      properties:
+        build_id:
+          type: string
+        customer_name:
+          type: string
+        customer_phone:
+          type: string
+        items:
+          type: array
+          items:
+            type: object
+            properties:
+              product_id:
+                type: string
+              quantity:
+                type: integer
+              unit_price:
+                type: number
+        checkout_method:
+          type: string
+          enum: [whatsapp, email, webhook, pix]
+
+    OrderResponse:
+      type: object
+      properties:
+        order_id:
+          type: string
+        status:
+          type: string
+        total:
+          type: number
+        checkout_url:
+          type: string
+        pix_code:
+          type: string
+        message:
+          type: string</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section id="roadmap" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Roadmap de Desenvolvimento</h2>
+            <p class="section-subtitle">
+                Plano de evolução do produto em fases incrementais.
+            </p>
+
+            <div class="roadmap">
+                <div class="roadmap-item completed">
+                    <div class="roadmap-marker">✓</div>
+                    <div class="roadmap-content">
+                        <h3>MVP-0: Core Funcional</h3>
+                        <span class="roadmap-date">Semanas 1-4</span>
+                        <ul>
+                            <li>Upload e processamento de PDF</li>
+                            <li>Geração de tiles multi-resolução</li>
+                            <li>Viewer básico com navegação</li>
+                            <li>Carrinho e checkout WhatsApp</li>
+                            <li>Deploy em ambiente de staging</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item current">
+                    <div class="roadmap-marker">●</div>
+                    <div class="roadmap-content">
+                        <h3>MVP-1: Diferenciais</h3>
+                        <span class="roadmap-date">Semanas 5-8</span>
+                        <ul>
+                            <li>Painel administrativo self-service</li>
+                            <li>Editor visual de hotspots</li>
+                            <li>Integração PIX (API Pix do Banco Central)</li>
+                            <li>Dashboard de analytics básico</li>
+                            <li>Webhooks para ERPs</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">○</div>
+                    <div class="roadmap-content">
+                        <h3>MVP-2: Automação IA</h3>
+                        <span class="roadmap-date">Semanas 9-12</span>
+                        <ul>
+                            <li>OCR para detecção de códigos</li>
+                            <li>YOLOv8 para detecção de produtos</li>
+                            <li>Mapeamento automático de hotspots</li>
+                            <li>Sugestões inteligentes de preços</li>
+                            <li>Validação human-in-the-loop</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="roadmap-item">
+                    <div class="roadmap-marker">○</div>
+                    <div class="roadmap-content">
+                        <h3>v1.0: Lançamento Público</h3>
+                        <span class="roadmap-date">Semanas 13-16</span>
+                        <ul>
+                            <li>Integrações Bling, Tiny, Omie</li>
+                            <li>Multi-tenancy completo</li>
+                            <li>Sistema de billing (Stripe)</li>
+                            <li>Onboarding automatizado</li>
+                            <li>Documentação e suporte</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment -->
+    <section id="deployment" class="section">
+        <div class="container">
+            <h2 class="section-title">Guia de Deployment</h2>
+            <p class="section-subtitle">
+                Instruções completas para colocar o projeto em produção.
+            </p>
+
+            <div class="deployment-steps">
+                <div class="deploy-step">
+                    <div class="deploy-step-header">
+                        <span class="step-badge">1</span>
+                        <h3>Pré-requisitos</h3>
+                    </div>
+                    <div class="deploy-step-content">
+                        <pre><code class="language-bash"># Instalar dependências
+sudo apt update && sudo apt install -y docker.io docker-compose nodejs npm python3.11 python3-pip
+
+# Instalar AWS CLI
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip && sudo ./aws/install
+
+# Configurar AWS
+aws configure
+
+# Instalar Terraform
+wget https://releases.hashicorp.com/terraform/1.6.0/terraform_1.6.0_linux_amd64.zip
+unzip terraform_1.6.0_linux_amd64.zip && sudo mv terraform /usr/local/bin/</code></pre>
+                    </div>
+                </div>
+
+                <div class="deploy-step">
+                    <div class="deploy-step-header">
+                        <span class="step-badge">2</span>
+                        <h3>Clonar e Configurar</h3>
+                    </div>
+                    <div class="deploy-step-content">
+                        <pre><code class="language-bash"># Clonar repositório
+git clone https://github.com/seu-usuario/catalogo-agil.git
+cd catalogo-agil
+
+# Copiar e editar variáveis de ambiente
+cp .env.example .env
+nano .env
+
+# Conteúdo do .env:
+DATABASE_URL=postgresql://postgres:SUA_SENHA@localhost:5432/catalogo_agil
+REDIS_URL=redis://localhost:6379/0
+AWS_ACCESS_KEY_ID=SUA_CHAVE
+AWS_SECRET_ACCESS_KEY=SEU_SEGREDO
+S3_BUCKET=catalogo-agil-assets
+AWS_REGION=sa-east-1</code></pre>
+                    </div>
+                </div>
+
+                <div class="deploy-step">
+                    <div class="deploy-step-header">
+                        <span class="step-badge">3</span>
+                        <h3>Provisionar Infraestrutura</h3>
+                    </div>
+                    <div class="deploy-step-content">
+                        <pre><code class="language-bash"># Navegar para diretório de infra
+cd infra/terraform
+
+# Inicializar Terraform
+terraform init
+
+# Planejar mudanças
+terraform plan -out=tfplan
+
+# Aplicar infraestrutura
+terraform apply tfplan
+
+# Salvar outputs
+terraform output > ../outputs.txt</code></pre>
+                    </div>
+                </div>
+
+                <div class="deploy-step">
+                    <div class="deploy-step-header">
+                        <span class="step-badge">4</span>
+                        <h3>Deploy Local (Desenvolvimento)</h3>
+                    </div>
+                    <div class="deploy-step-content">
+                        <pre><code class="language-bash"># Voltar para raiz do projeto
+cd ../..
+
+# Subir todos os serviços
+docker-compose up --build -d
+
+# Verificar status
+docker-compose ps
+
+# Ver logs
+docker-compose logs -f backend
+
+# Acessar:
+# - Frontend: http://localhost:3000
+# - API Docs: http://localhost:8000/docs</code></pre>
+                    </div>
+                </div>
+
+                <div class="deploy-step">
+                    <div class="deploy-step-header">
+                        <span class="step-badge">5</span>
+                        <h3>Deploy Produção (AWS)</h3>
+                    </div>
+                    <div class="deploy-step-content">
+                        <pre><code class="language-bash"># Build das imagens
+docker build -t catalogo-backend ./backend
+docker build -t catalogo-frontend ./frontend
+docker build -t catalogo-worker ./worker
+
+# Push para ECR
+aws ecr get-login-password --region sa-east-1 | docker login --username AWS --password-stdin SEU_ACCOUNT.dkr.ecr.sa-east-1.amazonaws.com
+
+docker tag catalogo-backend:latest SEU_ACCOUNT.dkr.ecr.sa-east-1.amazonaws.com/catalogo-backend:latest
+docker push SEU_ACCOUNT.dkr.ecr.sa-east-1.amazonaws.com/catalogo-backend:latest
+
+# Deploy via ECS (ou usar GitHub Actions para CI/CD)
+aws ecs update-service --cluster catalogo-cluster --service backend --force-new-deployment</code></pre>
+                    </div>
+                </div>
+
+                <div class="deploy-step">
+                    <div class="deploy-step-header">
+                        <span class="step-badge">6</span>
+                        <h3>Verificar Deploy</h3>
+                    </div>
+                    <div class="deploy-step-content">
+                        <pre><code class="language-bash"># Testar health check
+curl https://api.catalogoagil.com.br/health
+
+# Testar upload de catálogo
+curl -X POST https://api.catalogoagil.com.br/api/v1/catalogs \
+  -F "name=Teste" \
+  -F "pdf_file=@catalogo-teste.pdf"
+
+# Verificar logs
+aws logs tail /ecs/catalogo-backend --follow</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-text">Catálogo Ágil</span>
+                    <p>Plataforma SaaS de Catálogos Digitais Interativos</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Documentação</h4>
+                    <ul>
+                        <li><a href="#visao-geral">Visão Geral</a></li>
+                        <li><a href="#arquitetura">Arquitetura</a></li>
+                        <li><a href="#codigo">Código-Fonte</a></li>
+                        <li><a href="#deployment">Deployment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Catálogo Ágil. Projeto desenvolvido com base em pesquisa e engenharia reversa.</p>
+                <p class="footer-tech">Construído com Next.js, FastAPI, PostgreSQL e muito ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/yaml.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
